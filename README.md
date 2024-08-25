@@ -1,5 +1,6 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![SOC + Honeynet in Azure](https://github.com/user-attachments/assets/fab66a75-0755-444c-98f7-33fa13553158)
+![SOC + Honeynet in Azure](https://github.com/user-attachments/assets/a824ea45-8ab7-457e-bbed-e1c05b871775)
+
 
 
 ## Introduction
@@ -21,7 +22,7 @@ To measure the effectiveness of security measures, I first recorded some securit
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
 
-The architecture of the mini honeynet in Azure consists of the following components:
+The setup of the mini honeynet in Azure included several key components:
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
@@ -31,9 +32,9 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+**Before:** Initially, all resources were deployed and exposed to the internet. The Virtual Machines had their security settings wide open, allowing unrestricted access. Additionally, all resources were accessible through public internet connections, with no protection from private endpoints.
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+**After:** To improve security, I tightened the Network Security Groups by blocking all traffic except from my admin workstation. I also secured other resources using their built-in firewalls and enabled Private Endpoints to ensure they were no longer exposed to the public internet.
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>

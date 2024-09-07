@@ -1,5 +1,6 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![SOC + Honeynet in Azure](https://github.com/user-attachments/assets/a824ea45-8ab7-457e-bbed-e1c05b871775)
+![SOC + Honeynet in Azure](https://github.com/user-attachments/assets/d6b0d64f-ab87-4ae3-89ae-48598c936885)
+
 
 
 
@@ -17,10 +18,13 @@ To measure the effectiveness of security measures, I first recorded some securit
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Architecture Before Hardening _ Security Controls ](https://github.com/user-attachments/assets/4ce902f5-92dd-4422-b418-77ac20c1694e)
+
+
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Architecture After Hardening _ Security Controls](https://github.com/user-attachments/assets/bb7cfc48-1ec9-4193-b9ee-9157e4094687)
+
 
 The setup of the mini honeynet in Azure included several key components:
 

@@ -7,7 +7,7 @@
 ## Introduction
 
 
-In this project, I set up a controlled environment in Azure to attract and observe potential cyber threats. I collected data from different parts of this environment and sent it to a central system where it could be analyzed. Using Microsoft Sentinel, I created visual maps of the attacks, set up alerts for suspicious activity, and tracked incidents.
+In this project, I set up a controlled environment in Azure to attract and observe potential cyber threats. I collected data from different parts of this environment and sent it to a central system (Azure Log Analytics Workspace) where it could be analyzed. Using Microsoft Sentinel, I created visual maps of the attacks, set up alerts for suspicious activity, and tracked incidents.
 
 To measure the effectiveness of security measures, I first recorded some security metrics in an unsecured environment over 24 hours. Then, I applied security enhancements, measured the metrics again for another 24 hours, and compared the results. The metrics we'll look at include:
 
